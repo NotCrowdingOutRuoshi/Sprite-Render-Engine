@@ -1,7 +1,7 @@
-package SpriteRenderEngine;
+package spriteRenderEngine;
 
-import DynamicObjectModule.DynamicObjectModule;
-import DynamicObjectModule.Entities.Entity;
+import dynamicObjectModule.DynamicObjectModule;
+import dynamicObjectModule.entities.Entity;
 
 public class SpriteRenderEngine {
 	private DynamicObjectModule _dynamicObjectModule;
