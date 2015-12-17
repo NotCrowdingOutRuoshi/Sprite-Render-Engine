@@ -13,8 +13,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Fake.TCPClientModule;
 import dynamicObjectModule.DynamicObjectModule;
+import fake.TCPClientModule;
 import spriteRenderEngine.SpriteRenderEngine;
 
 public class CreateSpriteRenderEngineTest {

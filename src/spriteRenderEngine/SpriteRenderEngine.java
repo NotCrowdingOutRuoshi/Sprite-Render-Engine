@@ -1,7 +1,7 @@
 package spriteRenderEngine;
 
 import dynamicObjectModule.DynamicObjectModule;
-import dynamicObjectModule.entities.Entity;
+import dynamicObjectModule.entities.Sprite;
 
 public class SpriteRenderEngine {
 	private DynamicObjectModule _dynamicObjectModule;
@@ -12,10 +12,10 @@ public class SpriteRenderEngine {
 	}
 
 	public void renderSprites() {
-		Entity[] entities = _dynamicObjectModule.getAllDynamicObjects();
+		Sprite[] entities = _dynamicObjectModule.getAllDynamicObjects();
 		
-		for (Entity entity : entities) {
-			entity.repaint();
+		for (Sprite sprite : entities) {
+			sprite.repaint();
 		}
 	}
 }
