@@ -20,6 +20,11 @@ public class Item extends Sprite {
 		_shared = shared;
 	}
 
+	@Override
+	public void draw() {
+		
+	}
+	
 	public int getIndex() {
 		return _index;
 	}

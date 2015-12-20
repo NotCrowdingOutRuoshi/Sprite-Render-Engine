@@ -14,6 +14,10 @@ public abstract class Sprite {
 		_x = x;
 		_y = y;
 	}
+	
+	public void draw() {
+		
+	}
 
 	public int getX() {
 		return _x;
