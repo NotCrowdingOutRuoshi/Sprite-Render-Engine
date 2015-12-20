@@ -22,12 +22,6 @@ public class DynamicObjectModule {
 		_items = new ArrayList<Item>();
 		_characters = new ArrayList<Character>();
 		_tcpClientModule = tcpClientModule;
-		
-		// Mock Sprites.
-		for (int i = 0; i < 5; i++) {
-			addItem("my name is item", i, true, i, i);
-			addVirtualCharacter(i);
-		}
 	}
 
 	public void addItem(String name, int index, boolean shared, int x, int y) {

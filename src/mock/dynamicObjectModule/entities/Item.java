@@ -22,9 +22,9 @@ public class Item extends Sprite {
 
 	@Override
 	public void draw() {
-		
+
 	}
-	
+
 	public int getIndex() {
 		return _index;
 	}

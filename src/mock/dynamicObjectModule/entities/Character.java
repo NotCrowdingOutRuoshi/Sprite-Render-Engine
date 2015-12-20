@@ -23,10 +23,10 @@ public class Character extends Sprite {
 		_direction = direction;
 		_speed = speed;
 	}
-	
+
 	@Override
 	public void draw() {
-		
+
 	}
 
 	public DIRECTIONS getDirection() {

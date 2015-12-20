@@ -3,20 +3,20 @@ package mock.dynamicObjectModule.entities;
 public abstract class Sprite {
 	public static final int DEFAULT_X = 0;
 	public static final int DEFAULT_Y = 0;
-	
+
 	protected int _x;
 	protected int _y;
 
 	public Sprite(int x, int y) {
 		assert (x >= 0);
 		assert (y >= 0);
-		
+
 		_x = x;
 		_y = y;
 	}
-	
+
 	public void draw() {
-		
+
 	}
 
 	public int getX() {
