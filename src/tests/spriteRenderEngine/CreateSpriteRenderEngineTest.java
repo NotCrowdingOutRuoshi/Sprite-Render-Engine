@@ -13,8 +13,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import dynamicObjectModule.DynamicObjectModule;
-import fake.TCPClientModule;
+import mock.dynamicObjectModule.DynamicObjectModule;
+import mock.tcpClientModule.TCPClientModule;
 import spriteRenderEngine.SpriteRenderEngine;
 
 public class CreateSpriteRenderEngineTest {
@@ -43,7 +43,7 @@ public class CreateSpriteRenderEngineTest {
 	}
 
 	@Test
-	public void testConstructorShouldSuccess() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {		
+	public void testConstructorShouldSuccess() throws IllegalArgumentException, IllegalAccessException {		
 		DynamicObjectModule expectedDom = new DynamicObjectModule(new TCPClientModule());
 		SpriteRenderEngine engine = new SpriteRenderEngine(expectedDom);
 		

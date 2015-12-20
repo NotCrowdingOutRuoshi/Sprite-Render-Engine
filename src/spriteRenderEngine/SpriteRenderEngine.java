@@ -1,7 +1,7 @@
 package spriteRenderEngine;
 
-import dynamicObjectModule.DynamicObjectModule;
-import dynamicObjectModule.entities.Sprite;
+import mock.dynamicObjectModule.DynamicObjectModule;
+import mock.dynamicObjectModule.entities.Sprite;
 
 public class SpriteRenderEngine {
 	private DynamicObjectModule _dynamicObjectModule;
@@ -15,7 +15,7 @@ public class SpriteRenderEngine {
 		Sprite[] entities = _dynamicObjectModule.getAllDynamicObjects();
 		
 		for (Sprite sprite : entities) {
-			sprite.repaint();
+			
 		}
 	}
 }
