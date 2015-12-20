@@ -15,7 +15,7 @@ public class SpriteRenderEngine {
 		Sprite[] entities = _dynamicObjectModule.getAllDynamicObjects();
 		
 		for (Sprite sprite : entities) {
-			
+			sprite.draw();
 		}
 	}
 }

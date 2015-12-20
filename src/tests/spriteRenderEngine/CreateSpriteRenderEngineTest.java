@@ -41,20 +41,6 @@ public class CreateSpriteRenderEngineTest {
 	public void tearDown() throws Exception {
 		
 	}
-	
-	@Test
-	public void testRenderSprite() {
-		DynamicObjectModule dom = new DynamicObjectModule(new TCPClientModule());
-		
-		// Mock Sprites.
-		for (int i = 0; i < 5; i++) {
-			dom.addItem("my name is item", i, true, i, i);
-			dom.addVirtualCharacter(i);
-		}
-		
-		SpriteRenderEngine engine = new SpriteRenderEngine(dom);
-		engine.renderSprites();
-	}
 
 	@Test
 	public void testConstructorShouldSuccess() throws IllegalArgumentException, IllegalAccessException {		

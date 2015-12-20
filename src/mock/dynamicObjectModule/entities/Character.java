@@ -8,14 +8,12 @@ public class Character extends Sprite {
 	public static final int DEFAULT_SPEED = 0;
 	public static final DIRECTIONS DEFAULT_DIRECTION = DIRECTIONS.RIGHT;
 
-	private int _id;
 	private int _speed;
 	private DIRECTIONS _direction;
 
 	public Character(int id, int x, int y, DIRECTIONS direction, int speed) {
-		super(x, y);
+		super(id, x, y);
 
-		assert (id >= 0);
 		assert (isDirectionValid(direction));
 		assert (speed >= 0);
 
@@ -26,7 +24,21 @@ public class Character extends Sprite {
 
 	@Override
 	public void draw() {
+		super.draw();
+		
+		consoleOutput.append("Draw:Character");
+		consoleOutput.append(System.getProperty("line.separator"));
+		consoleOutput.append("ID:" + _id);
+		consoleOutput.append(System.getProperty("line.separator"));
+		consoleOutput.append("X:" + _x);
+		consoleOutput.append(System.getProperty("line.separator"));
+		consoleOutput.append("Y:" + _y);
+		consoleOutput.append(System.getProperty("line.separator"));
+		consoleOutput.append("Direction:" + _direction);
+		consoleOutput.append(System.getProperty("line.separator"));
+		consoleOutput.append("Speed:" + _speed);
 
+		System.out.println(consoleOutput);
 	}
 
 	public DIRECTIONS getDirection() {
@@ -37,15 +49,6 @@ public class Character extends Sprite {
 		assert (isDirectionValid(direction));
 
 		_direction = direction;
-	}
-
-	public int getId() {
-		return _id;
-	}
-
-	public void setId(int id) {
-		assert (id >= 0);
-		_id = id;
 	}
 
 	public int getSpeed() {

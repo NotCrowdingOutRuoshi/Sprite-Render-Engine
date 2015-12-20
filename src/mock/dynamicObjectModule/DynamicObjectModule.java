@@ -29,7 +29,7 @@ public class DynamicObjectModule {
 		assert (index >= 0);
 
 		for (Item item : _items) {
-			assert (index != item.getIndex());
+			assert (index != item.getId());
 		}
 
 		Item item = new Item(name, index, shared, x, y);
@@ -53,7 +53,7 @@ public class DynamicObjectModule {
 		assert (index >= 0);
 
 		for (Item item : _items) {
-			if (item.getIndex() == index) {
+			if (item.getId() == index) {
 				return item;
 			}
 		}
