@@ -34,30 +34,30 @@ public class CreateSpriteRenderEngineTest {
 
 	@Before
 	public void setUp() throws Exception {
-		
+
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		
+
 	}
 
 	@Test
-	public void testConstructorShouldSuccess() throws IllegalArgumentException, IllegalAccessException {		
+	public void testConstructorShouldSuccess() throws IllegalArgumentException, IllegalAccessException {
 		DynamicObjectModule expectedDom = new DynamicObjectModule(new TCPClientModule());
 		SpriteRenderEngine engine = new SpriteRenderEngine(expectedDom);
-		
+
 		Object actualDomMember = _domFieldAccessor.get(engine);
-		
+
 		assertSame(expectedDom, actualDomMember);
 	}
 
-	@Test(expected=AssertionError.class)
+	@Test(expected = AssertionError.class)
 	public void testConstructorShouldFailWithNullInjection() throws IllegalArgumentException, IllegalAccessException {
 		SpriteRenderEngine engine = new SpriteRenderEngine(null);
-		
+
 		Object actualDomMember = _domFieldAccessor.get(engine);
-		
+
 		assertNull(actualDomMember);
 	}
 }
